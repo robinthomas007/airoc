@@ -1,49 +1,41 @@
-import { Paper, Text, Title } from '@mantine/core';
+import { Paper, Text } from '@mantine/core';
 
 const stackBenefits = [
   {
-    title: 'Performance First',
+    title: 'Fast Performance',
     description:
-      'Fast-loading pages, smooth interactions, and optimized rendering that keep visitors engaged.',
-    stat: 'Speed',
+      'Your website loads quickly and runs smoothly, keeping visitors engaged.',
   },
   {
-    title: 'Scalable Structure',
+    title: 'Scalable Growth',
     description:
-      'Clean architecture that makes it easier to grow from a simple site into a larger product over time.',
-    stat: 'Scale',
+      'Built in a way that allows your website to grow as your business expands.',
   },
   {
-    title: 'SEO & Visibility',
+    title: 'SEO Ready',
     description:
-      'Technical foundations that help your website stay discoverable, crawlable, and business-ready.',
-    stat: 'SEO',
+      'Optimized structure that helps your business appear on Google and reach more customers.',
   },
   {
     title: 'Easy Maintenance',
     description:
-      'A modern stack that keeps updates, content changes, and future improvements manageable.',
-    stat: 'Support',
+      'Simple updates and changes so your website stays fresh without hassle.',
   },
 ];
 
 export default function ModernWebStack() {
   return (
-    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#07111f_0%,#0b1220_35%,#09111d_100%)] px-6 py-24 lg:px-8">
+    <section className="relative overflow-hidden bg-[linear-gradient(180deg,#07111f_0%,#0b1220_35%,#09111d_100%)] px-6 py-20 lg:px-8">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.18),transparent_25%),radial-gradient(circle_at_80%_18%,rgba(168,85,247,0.14),transparent_22%),radial-gradient(circle_at_50%_100%,rgba(34,211,238,0.12),transparent_28%)]" />
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
           <Text className="text-sm font-semibold tracking-[0.24em] text-cyan-300 uppercase">
-            Modern Web Stack
+            Why Our Websites Work Better
           </Text>
-          <Title order={2} className="mt-4 text-4xl font-semibold tracking-tight text-white">
-            The stack is modern because the outcome needs to be dependable.
-          </Title>
+          
           <Text className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-            We choose modern tools not just because they are popular, but because
-            they help your website stay fast, scalable, secure, and easier to
-            maintain as your business grows.
+           We use the latest tools to ensure your website is fast, reliable, and ready to grow with your business.
           </Text>
         </div>
 
@@ -56,14 +48,10 @@ export default function ModernWebStack() {
               className="group relative overflow-hidden border border-white/12 bg-white/[0.06] shadow-[0_16px_38px_rgba(15,23,42,0.24)] backdrop-blur-2xl transition duration-300 hover:-translate-y-1.5 hover:border-cyan-300/30 hover:shadow-[0_22px_50px_rgba(34,211,238,0.12)]"
             >
               <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-70" />
-              <div className="flex h-16 w-16 items-center justify-center rounded-[1.6rem] border border-cyan-300/15 bg-slate-950/80 text-sm font-semibold tracking-[0.18em] text-cyan-200">
-                {item.stat}
-              </div>
-
-              <Text className="mt-6 text-lg font-medium text-white">
+              <Text className="text-lg font-semibold text-cyan-600">
                 {item.title}
               </Text>
-              <Text className="mt-3 text-sm leading-6 text-slate-400 transition group-hover:text-slate-300">
+              <Text className="mt-8 text-sm leading-6 text-slate-400 transition group-hover:text-slate-300">
                 {item.description}
               </Text>
             </Paper>
@@ -71,8 +59,8 @@ export default function ModernWebStack() {
         </div>
 
         <div className="mt-12 text-center">
-          <Text className="text-base text-slate-400">
-            Modern tools matter most when they create a better experience for your business and your customers.
+          <Text className="text-sm text-slate-500">
+            Powered by modern technologies like React, Next.js, and more
           </Text>
         </div>
       </div>

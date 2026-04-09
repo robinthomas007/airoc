@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Alert, Button, TextInput, Textarea } from '@mantine/core';
 
 import { buildWhatsAppLink, siteConfig } from '@/app/lib/site';
+import { whatsAppGradientStyle } from '@/app/lib/whatsapp-style';
 
 type FormState = {
   name: string;
@@ -100,7 +101,8 @@ export default function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 radius="xl"
-                className="bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+                className="text-white hover:brightness-105"
+                style={whatsAppGradientStyle}
               >
                 Open WhatsApp
               </Button>

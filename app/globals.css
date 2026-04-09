@@ -90,3 +90,35 @@ body::selection {
 .technology-marquee:hover {
   animation-play-state: paused;
 }
+
+@keyframes variant-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.variant-fade-up {
+  opacity: 0;
+  animation: variant-fade-up 700ms ease-out forwards;
+}
+
+.variant-card-hover {
+  transition:
+    transform 280ms ease,
+    box-shadow 280ms ease,
+    border-color 280ms ease;
+}
+
+.variant-card-hover:hover {
+  transform: translateY(-8px);
+}
+
+.whatsapp-gradient {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+}

@@ -5,9 +5,6 @@ import { createTheme, MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
-import SiteFooter from '@/app/components/layout/SiteFooter';
-import SiteHeader from '@/app/components/layout/SiteHeader';
-import FloatingWhatsAppButton from '@/app/components/layout/FloatingWhatsAppButton';
 import { siteConfig } from '@/app/lib/site';
 
 const inter = Inter({
@@ -22,8 +19,35 @@ const theme = createTheme({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.name,
+  metadataBase: new URL(siteConfig.siteUrl),
+  title: siteConfig.title,
   description: siteConfig.description,
+  keywords: [
+    'website development for businesses',
+    'business website design',
+    'modern website development',
+    'Next.js website development',
+    'AiRoc Solutions',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.siteUrl,
+    siteName: siteConfig.name,
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteConfig.title,
+    description: siteConfig.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -35,12 +59,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <body>
         <MantineProvider theme={theme}>
-          <div className="min-h-screen bg-slate-950 text-white">
-            <SiteHeader />
-            {children}
-            <SiteFooter />
-            <FloatingWhatsAppButton />
-          </div>
+          {children}
         </MantineProvider>
       </body>
     </html>

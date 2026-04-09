@@ -6,6 +6,8 @@ import { useState } from 'react';
 import { Burger, Button, Drawer } from '@mantine/core';
 
 import { buildWhatsAppLink, siteConfig } from '@/app/lib/site';
+import { whatsAppGradientStyle } from '@/app/lib/whatsapp-style';
+import VersionSwitcher from '@/app/components/layout/VersionSwitcher';
 
 export default function SiteHeader() {
   const [opened, setOpened] = useState(false);
@@ -41,14 +43,16 @@ export default function SiteHeader() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <VersionSwitcher current="v1" />
           <Button
             component="a"
             href={whatsAppHref}
             target="_blank"
             rel="noreferrer"
             radius="xl"
-            className="bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+            className="text-white hover:brightness-105"
+            style={whatsAppGradientStyle}
           >
             Chat on WhatsApp
           </Button>
@@ -84,6 +88,9 @@ export default function SiteHeader() {
         }}
       >
         <div className="flex flex-col gap-4">
+          <div className="mb-2">
+            <VersionSwitcher current="v1" />
+          </div>
           {siteConfig.navItems.map((item) => (
             <a
               key={item.href}
@@ -101,7 +108,8 @@ export default function SiteHeader() {
             target="_blank"
             rel="noreferrer"
             radius="xl"
-            className="mt-2 bg-cyan-400 text-slate-950 hover:bg-cyan-300"
+            className="mt-2 text-white hover:brightness-105"
+            style={whatsAppGradientStyle}
           >
             Start a WhatsApp Chat
           </Button>

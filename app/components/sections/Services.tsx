@@ -72,6 +72,14 @@ const reasons = [
   'Clear conversion paths with forms, WhatsApp, and business-focused messaging',
 ];
 
+const whyChoosePoints = [
+  'Fast delivery',
+  'Affordable pricing',
+  'Modern design',
+  'Mobile optimized',
+  'Ongoing support',
+];
+
 export default function Services() {
   return (
     <>
@@ -140,6 +148,17 @@ export default function Services() {
             <h2 className="mt-4 text-4xl font-semibold tracking-tight text-white">
               We combine visual polish with practical business thinking.
             </h2>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {whyChoosePoints.map((point) => (
+                <div
+                  key={point}
+                  className="inline-flex items-center rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-slate-200"
+                >
+                  <span className="mr-2 text-[#9b9bff]">✔</span>
+                  {point}
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="grid gap-5">

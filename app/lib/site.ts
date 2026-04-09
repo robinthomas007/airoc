@@ -1,10 +1,14 @@
 export const siteConfig = {
   name: 'AiRoc Solutions',
   tagline: 'Adaptive. Reactive. Creative.',
+  title: 'Website Development for Businesses | AiRoc Solutions',
   description:
-    'AiRoc Solutions builds premium websites and digital experiences that help businesses earn trust and generate enquiries.',
+    'We build modern websites that help businesses get more customers.',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://airocsolutions.com',
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? 'hello@airocsolutions.com',
   whatsAppNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '919999999999',
+  phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? '+91 98765 43210',
+  location: process.env.NEXT_PUBLIC_LOCATION ?? 'Silicon Valley, India',
   navItems: [
     { label: 'Services', href: '#services' },
     { label: 'How It Works', href: '#how-it-works' },

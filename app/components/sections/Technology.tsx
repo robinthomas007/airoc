@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Paper, Text, Title, Tooltip } from '@mantine/core';
+import { Paper, Text, Tooltip,Title } from '@mantine/core';
 
 const technologies = [
   { name: 'React', logo: 'https://cdn.simpleicons.org/react/61DAFB' },
@@ -58,13 +58,9 @@ export default function Technology() {
           <Text className="text-sm font-semibold tracking-[0.24em] text-indigo-200 uppercase">
             Technologies We Use
           </Text>
-          <Title order={2} className="mt-4 text-4xl font-semibold tracking-tight text-white">
-            Modern tools for serious web products.
-          </Title>
-          <Text className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-slate-400">
-            We use modern technologies to build fast, scalable, and high-performance
-            websites and applications
-          </Text>
+            <Title order={2} className="mt-4 text-4xl font-semibold tracking-tight text-white">
+                     We use modern technologies to build fast and reliable websites
+                    </Title>
         </div>
 
         <div className="mt-14 md:hidden">

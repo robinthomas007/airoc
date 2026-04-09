@@ -1,6 +1,7 @@
 import { Button } from '@mantine/core';
 
 import { buildWhatsAppLink, siteConfig } from '@/app/lib/site';
+import { whatsAppGradientStyle } from '@/app/lib/whatsapp-style';
 
 const metrics = [
   { label: 'Launch speed', value: '7-21 days' },
@@ -51,7 +52,8 @@ export default function Hero() {
               rel="noreferrer"
               size="lg"
               radius="xl"
-              className="px-8 text-slate-950 hover:bg-cyan-300"
+              className="px-8 text-white hover:brightness-105"
+              style={whatsAppGradientStyle}
             >
               Chat on WhatsApp
             </Button>
