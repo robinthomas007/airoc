@@ -10,8 +10,10 @@ export default function VariantPortfolio() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-5xl font-medium tracking-tight">Our Work</h2>
-          <p className="mt-5 text-xl text-slate-400">
+          <h2 className="text-4xl font-medium tracking-tight text-white">
+            Our Work
+          </h2>
+          <p className="mt-3 text-base leading-6 text-slate-400">
             A few examples of what we can build
           </p>
         </div>
@@ -35,8 +37,8 @@ export default function VariantPortfolio() {
                   <div className="absolute inset-0 bg-gradient-to-b from-slate-950/5 via-transparent to-slate-950/30" />
                 </div>
                 <div className="px-9 py-8">
-                  <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
-                  <p className="mt-4 text-lg leading-8 text-slate-400">
+                  <h3 className="text-xl font-bold text-white">{item.title}</h3>
+                  <p className="mt-3 leading-6 text-slate-400">
                     {item.description}
                   </p>
                   <p className="mt-5 text-sm font-semibold tracking-[0.18em] uppercase text-[#7f83ff]">

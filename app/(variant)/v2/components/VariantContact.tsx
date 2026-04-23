@@ -63,10 +63,10 @@ export default function VariantContact() {
     <section id="contact" className="bg-white px-6 py-24 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
-          <h2 className="text-3xl font-medium tracking-tight text-slate-900 md:text-4xl">
+          <h2 className="text-4xl font-medium tracking-tight text-slate-900">
             Get in Touch
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-8 text-slate-500 md:text-[1.05rem] md:leading-[1.55]">
+          <p className="mt-3 max-w-xl leading-6 text-gray-500">
             Let&apos;s build your website together. Reach out via the form or
             WhatsApp.
           </p>
@@ -77,10 +77,10 @@ export default function VariantContact() {
                 <MailIcon className="h-7 w-7" />
               </div>
               <div>
-                <p className="text-sm font-semibold tracking-[0.18em] text-slate-400 uppercase">
+                <p className="text-sm text-gray-500 uppercase tracking-widest font-bold">
                   Email Us
                 </p>
-                <p className="mt-1 text-xl font-semibold text-slate-900 md:text-[1.05rem]">
+                <p className="text-lg font-bold">
                   {siteConfig.email}
                 </p>
               </div>
@@ -91,11 +91,11 @@ export default function VariantContact() {
                 <WhatsAppIcon className="h-7 w-7" />
               </div>
               <div>
-                <p className="text-sm font-semibold tracking-[0.18em] text-slate-400 uppercase">
+                <p className="text-sm text-gray-500 uppercase tracking-widest font-bold">
                   WhatsApp
                 </p>
-                <p className="mt-1 text-xl font-semibold text-slate-900 md:text-[1.05rem]">
-                  {siteConfig.phoneDisplay}
+                  <p className="text-lg font-bold">
+                    {siteConfig.phoneDisplay}
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function VariantContact() {
           <div className="mt-12 rounded-[1.7rem] bg-[#eef1ff] px-7 py-6 text-[#4f4fc9]">
             <div className="flex items-center gap-4">
               <SparkIcon className="h-6 w-6" />
-              <p className="text-base font-medium md:text-[0.95rem]">
+              <p className="leading-6 text-gray-600">
                 We usually respond within 24 hours. Looking forward to working
                 with you!
               </p>

@@ -176,3 +176,40 @@ export const testimonials = [
     initial: 'E',
   },
 ];
+
+export const pricingPlans = [
+  {
+    name: 'Basic',
+    price: '₹4,999+',
+    description:
+      'A clean starter website for small businesses that need a simple online presence.',
+    features: [
+      'Single-page website',
+      'Mobile responsive design',
+      'Contact section included',
+    ],
+  },
+  {
+    name: 'Standard',
+    price: '₹9,999+',
+    description:
+      'A business-ready website with stronger structure, trust signals, and better lead flow.',
+    features: [
+      'Multi-section website',
+      'WhatsApp + enquiry integration',
+      'SEO-friendly structure',
+    ],
+    popular: true,
+  },
+  {
+    name: 'Premium',
+    price: '₹19,999+',
+    description:
+      'A more advanced website experience for brands that need scale, polish, and flexibility.',
+    features: [
+      'Custom UI sections',
+      'Dynamic features or CMS support',
+      'Priority support and launch help',
+    ],
+  },
+];

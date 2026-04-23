@@ -9,6 +9,7 @@ import VariantHeader from './components/VariantHeader';
 import VariantHero from './components/VariantHero';
 import VariantHowItWorks from './components/VariantHowItWorks';
 import VariantPortfolio from './components/VariantPortfolio';
+import VariantPricing from './components/VariantPricing';
 import VariantServices from './components/VariantServices';
 import VariantTechnology from './components/VariantTechnology';
 import VariantTestimonials from './components/VariantTestimonials';
@@ -27,6 +28,7 @@ export default function VariantPage() {
       <VariantHero />
       <VariantWhyChoose />
       <VariantServices />
+      <VariantPricing />
       <VariantHowItWorks />
       <VariantPortfolio />
       <VariantTechnology />

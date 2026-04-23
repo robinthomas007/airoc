@@ -43,8 +43,8 @@ export default function HowItWorks() {
               <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-indigo-500/25 to-violet-500/25 text-sm font-semibold tracking-[0.2em] text-white ring-1 ring-inset ring-indigo-300/20">
                 {step.icon}
               </div>
-              <h3 className="mt-6 text-2xl font-semibold text-white">{step.title}</h3>
-              <p className="mt-4 leading-7 text-slate-400">{step.description}</p>
+              <h3 className="mt-6 text-xl font-semibold text-white">{step.title}</h3>
+              <p className="mt-4 leading-6 text-gray-500">{step.description}</p>
             </article>
           ))}
         </div>

@@ -5,13 +5,13 @@ export default function VariantServices() {
     <section id="services" className="bg-[#f7f8ff] px-6 py-24 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-800 mb-4 font-medium tracking-tight text-slate-900">
+          <h2 className="text-center text-4xl font-medium tracking-tight text-slate-900 mb-4">
             Our Services
           </h2>
-          <p className="mt-5 text-lg text-gray-600">
+          <p className="text-gray-600 text-lg">
             Complete website solutions for your business
           </p>
-          <div className="mt-6 inline-flex rounded-full bg-[#eaedff] px-5 py-2 text-lg font-semibold text-[#5956e9]">
+          <div className="mt-4 text-indigo-600 font-bold bg-indigo-50 inline-block px-4 py-1 rounded-full text-sm">
             Starting from ₹4999
           </div>
         </div>
@@ -22,16 +22,16 @@ export default function VariantServices() {
             return (
               <article
                 key={item.title}
-                className="variant-card-hover variant-fade-up rounded-[2rem] border border-slate-200 bg-white p-9 shadow-[0_14px_30px_rgba(15,23,42,0.06)]"
+                className="service-card bg-white p-8 rounded-3xl shadow-sm border border-gray-100 transition-all duration-300"
                 style={{ animationDelay: `${index * 80}ms` }}
               >
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#5956e9] text-white shadow-[0_12px_24px_rgba(89,86,233,0.22)]">
+                <div className="flex mb-6 h-12 w-12 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-lg shadow-indigo-100">
                   <Icon className="h-7 w-7" />
                 </div>
-                <h3 className="mt-8 text-[2rem] leading-tight font-semibold text-slate-900">
+                <h3 className="text-xl font-bold mb-4">
                   {item.title}
                 </h3>
-                <p className="mt-5 text-xl leading-10 text-slate-500">
+                <p className="text-gray-600 leading-relaxed mb-6">
                   {item.description}
                 </p>
               </article>
